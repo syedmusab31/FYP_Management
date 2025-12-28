@@ -2,7 +2,7 @@
 
 A comprehensive Final Year Project (FYP) management system designed for universities to streamline the process of managing student projects, supervisions, document submissions, grading, and notifications.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -15,7 +15,7 @@ A comprehensive Final Year Project (FYP) management system designed for universi
 - [API Documentation](#api-documentation)
 - [Project Overview](#project-overview)
 
-## ✨ Features
+##  Features
 
 ### Core Functionality
 - **User Management**: Role-based access control (Students, Supervisors, Committee Members, FYP Committee)
@@ -27,25 +27,25 @@ A comprehensive Final Year Project (FYP) management system designed for universi
 
 ### Notification System (11 Notification Types)
 - **Student Notifications**:
-  - 🎓 Grade Released
-  - 📅 Deadline Created
-  - ✅ Document Approved
-  - 📝 Revision Requested
+  -  Grade Released
+  -  Deadline Created
+  -  Document Approved
+  -  Revision Requested
 
 - **Supervisor Notifications**:
-  - 📤 Document Uploaded
-  - 🔄 Document Resubmitted
-  - ⚠️ Committee Revision Requested
+  - Document Uploaded
+  -  Document Resubmitted
+  -  Committee Revision Requested
 
 - **Committee Notifications**:
-  - 📊 Grades Released
-  - 📬 Document Resubmitted for Review
+  -  Grades Released
+  -  Document Resubmitted for Review
 
 - **FYP Committee Notifications**:
-  - 🏆 Grades Completed
+  -  Grades Completed
 
 - **General**:
-  - 📢 General Announcements
+  -  General Announcements
 
 ### Technical Highlights
 - **Time Standardization**: All temporal data uses `java.time.Instant` for UTC consistency
@@ -54,7 +54,7 @@ A comprehensive Final Year Project (FYP) management system designed for universi
 - **CORS Enabled**: Cross-origin resource sharing for frontend-backend communication
 - **Responsive UI**: Mobile-friendly interface built with Tailwind CSS
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Backend
 - **Java 17** with Spring Boot 3.2.0
@@ -74,7 +74,7 @@ A comprehensive Final Year Project (FYP) management system designed for universi
 - **MySQL 8.0+** for persistent storage
 - **Liquibase/Hibernate** for schema management
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 SCD_PROJECT/
@@ -111,7 +111,7 @@ SCD_PROJECT/
 └── README.md                         # This file
 ```
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **Java Development Kit (JDK)**: Version 17 or higher
 - **Node.js & npm**: Version 14 or higher (for frontend)
@@ -136,7 +136,7 @@ mysql --version
 mvn --version
 ```
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Backend Setup
 
@@ -195,7 +195,7 @@ mvn --version
    
    The frontend will typically run on `http://localhost:5173`
 
-## 🏃 Running the Application
+##  Running the Application
 
 ### Option 1: Sequential Start (Recommended for Development)
 
@@ -227,7 +227,7 @@ npm run build
 npm run preview
 ```
 
-## 📚 API Documentation
+## API Documentation
 
 ### Base URL
 ```
@@ -274,7 +274,7 @@ Authorization: Bearer <your_jwt_token>
 - `PUT /deadlines/{id}` - Update deadline
 - `DELETE /deadlines/{id}` - Delete deadline
 
-## 📖 Project Overview
+##  Project Overview
 
 ### Time Management
 - **Instant-based**: All temporal fields use `java.time.Instant` for UTC consistency
@@ -305,7 +305,7 @@ Authorization: Bearer <your_jwt_token>
 | **Committee Member** | Review work, request revisions, provide grading |
 | **FYP Committee** | Manage deadlines, finalize grades, oversee process |
 
-## 🔐 Security Features
+##  Security Features
 
 - **JWT Authentication**: Stateless, token-based authentication
 - **Password Encryption**: Passwords hashed using BCrypt
@@ -313,7 +313,7 @@ Authorization: Bearer <your_jwt_token>
 - **Role-Based Authorization**: Method-level security with `@PreAuthorize`
 - **Entity-Level Security**: User validation for sensitive operations
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend Issues
 
@@ -355,14 +355,14 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-## 📝 Default Credentials
+##  Default Credentials
 
 The system creates a default admin user:
 - **Email**: `admin@university.edu`
 - **Password**: `password123`
 - **Role**: FYP Committee
 
-## 🔄 Database Schema
+##  Database Schema
 
 ### Key Tables
 - `users` - User accounts with roles
@@ -374,18 +374,6 @@ The system creates a default admin user:
 - `reviews` - Document reviews and feedback
 
 All tables use Instant (UTC) for timestamps.
-
-## 📞 Support & Contributing
-
-For issues, bugs, or feature requests:
-1. Check existing documentation
-2. Review error messages in browser console or server logs
-3. Verify all prerequisites are installed correctly
-4. Check backend and frontend are running on correct ports
-
-## 📄 License
-
-This project is part of university FYP management infrastructure.
 
 ---
 
